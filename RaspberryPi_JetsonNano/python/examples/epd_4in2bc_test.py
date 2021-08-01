@@ -37,9 +37,10 @@ try:
     drawblack = ImageDraw.Draw(HBlackimage)
     drawry = ImageDraw.Draw(HRYimage)
     for x in range(4, 399, 5):
-        drawblack.line((x, 0, x, 300), fill=0)
+        drawblack.line((x, 0, x, 299), fill=0)
     for y in range(4, 299, 5):
-        drawblack.line((0, y, 400, y), fill=0)
+        drawblack.line((0, y, 399, y), fill=0)
+    drawblack.rectangle((0, 0, 399, 135), fill=0)
     # drawblack.text((10, 0), 'hello world', font=font24, fill=0)
     # drawblack.text((10, 20), '4.2inch e-Paper bc', font=font24, fill=0)
     # drawblack.text((150, 0), u'微雪电子', font=font24, fill=0)
