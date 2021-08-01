@@ -71,7 +71,7 @@ try:
     time.sleep(2)
 
     logging.info("3.read bmp file")
-    HBlackimage = Image.open(os.path.join(picdir, '4in2_Scale_1.bmp'))
+    HBlackimage = Image.open(os.path.join(picdir, '4in2_Scale_2.bmp'))
     HRYimage = Image.new('1', (epd.width, epd.height), 255)
     # HRYimage = Image.open(os.path.join(picdir, '4in2b-r.bmp'))
     # HBlackimage = Image.open(os.path.join(picdir, '4in2c-b.bmp'))
