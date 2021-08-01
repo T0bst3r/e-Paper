@@ -36,9 +36,9 @@ try:
     HRYimage = Image.new('1', (epd.width, epd.height), 255)  # 298*126  ryimage: red or yellow image
     drawblack = ImageDraw.Draw(HBlackimage)
     drawry = ImageDraw.Draw(HRYimage)
-    for x in range(400, step=5):
+    for x in range(0, 400, 5):
         drawblack.line((x, 0, x, 300), fill=0)
-    for y in range(300, step=5):
+    for y in range(0, 300, 5):
         drawblack.line((0, y, 400, y), fill=0)
     # drawblack.text((10, 0), 'hello world', font=font24, fill=0)
     # drawblack.text((10, 20), '4.2inch e-Paper bc', font=font24, fill=0)
